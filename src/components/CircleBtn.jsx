@@ -8,7 +8,7 @@ const CircleBtn = () => {
 				type="button"
 				className="w-full h-full flex justify-center items-center bg-primary rounded-full cursor-pointer"
 			>
-				<p className="text-gradient text-[.9rem] sm:text-[.9rem]">
+				<div className="text-gradient text-[.9rem] sm:text-[.9rem]">
 					<div className="flex">
 						{" "}
 						<span>Get</span>
@@ -16,7 +16,7 @@ const CircleBtn = () => {
 						<br />
 					</div>
 					<span>Started</span>
-				</p>
+				</div>
 			</button>
 		</div>
 	);

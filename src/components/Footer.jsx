@@ -19,7 +19,10 @@ const Footer = () => {
 				</div>{" "}
 				<div className="flex justify-between gap-[2.5rem] flex-wrap">
 					{footerLinks.map((footerLink) => (
-						<div className="flex flex-col items-start gap-[1rem]">
+						<div
+							className="flex flex-col items-start gap-[1rem]"
+							key={footerLink.title}
+						>
 							<h4 className="text-white font-semibold">{footerLink.title}</h4>
 							<div className="flex flex-col gap-[.6rem]">
 								{footerLink.links.map((link) => (
