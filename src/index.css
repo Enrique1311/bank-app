@@ -5,6 +5,7 @@
 @tailwind utilities;
 
 :root {
+	@apply text-[16px];
 	--black-gradient: linear-gradient(
 		144.39deg,
 		#ffffff -278.56%,
@@ -15,7 +16,31 @@
 }
 
 * {
-	scroll-behavior: smooth;
+	@apply scroll-smooth box-border font-poppins;
+}
+
+.section-padding {
+	@apply px-[1rem] pt-[5rem];
+}
+
+.two-halves {
+	@apply flex flex-1 flex-col justify-start items-center sm:flex-row gap-[2rem];
+}
+
+.two-halves-reverse {
+	@apply flex flex-1 flex-col-reverse items-center sm:flex-row gap-[2rem];
+}
+
+.half-container {
+	@apply flex flex-col gap-[1.6rem] sm:w-1/2;
+}
+
+.p-text {
+	@apply text-[.8rem] text-light_gray;
+}
+
+.h3-title {
+	@apply text-[1.8rem] font-semibold text-white;
 }
 
 .text-gradient {
@@ -111,10 +136,6 @@
 	box-shadow: var(--card-shadow);
 }
 
-.feedback-container .feedback-card:last-child {
-	margin-right: 0px;
-}
-
 .feedback-card {
 	background: transparent;
 }
@@ -136,4 +157,30 @@
 .white__gradient {
 	background: rgba(255, 255, 255, 0.6);
 	filter: blur(750px);
+}
+
+@media screen and (min-width: 480px) {
+	.section-padding {
+		@apply px-[2rem];
+	}
+}
+
+@media screen and (min-width: 768px) {
+	:root {
+		@apply text-[18px];
+	}
+
+	.section-padding {
+		@apply px-[4rem] pt-[6rem];
+	}
+}
+
+@media screen and (min-width: 1060px) {
+	:root {
+		@apply text-[20px];
+	}
+
+	.section-padding {
+		@apply px-[6rem];
+	}
 }
