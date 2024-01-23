@@ -1,6 +1,6 @@
 import star from "../assets/Star.svg";
 import shield from "../assets/Shield.svg";
-import send from "../assets/send.svg";
+import send from "../assets/Send.svg";
 import people01 from "../assets/people01.png";
 import people02 from "../assets/people02.png";
 import people03 from "../assets/people03.png";
